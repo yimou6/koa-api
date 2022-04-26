@@ -1,0 +1,756 @@
+[2022-04-26T11:28:51.752] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^[a-zA-Z0-9_-]{4,16}$/',
+      code: 'invalid',
+      field: 'user_name'
+    },
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    },
+    {
+      message: 'should match /^[0-9a-zA-Z\\u4E00-\\u9FA5\\_]{6,18}/',
+      code: 'invalid',
+      field: 'nick_name'
+    },
+    {
+      message: 'should be one of 0, 1, 2',
+      code: 'invalid',
+      field: 'sex'
+    }
+  ],
+  params: {
+    user_name: '武秀英',
+    password: 'ad',
+    nick_name: '邵桂英',
+    sex: 54,
+    email: 'l.frqakpqk@qq.com'
+  }
+}
+[2022-04-26T11:29:10.152] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^[a-zA-Z0-9_-]{4,16}$/',
+      code: 'invalid',
+      field: 'user_name'
+    },
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    },
+    {
+      message: 'should match /^[0-9a-zA-Z\\u4E00-\\u9FA5\\_]{6,18}/',
+      code: 'invalid',
+      field: 'nick_name'
+    }
+  ],
+  params: {
+    user_name: '武秀英',
+    password: 'ad',
+    nick_name: '邵桂英',
+    sex: 1,
+    email: 'l.frqakpqk@qq.com'
+  }
+}
+[2022-04-26T11:29:31.145] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    },
+    {
+      message: 'should match /^[0-9a-zA-Z\\u4E00-\\u9FA5\\_]{6,18}/',
+      code: 'invalid',
+      field: 'nick_name'
+    }
+  ],
+  params: {
+    user_name: 'admin',
+    password: 'admin',
+    nick_name: '邵桂英',
+    sex: 1,
+    email: 'l.frqakpqk@qq.com'
+  }
+}
+[2022-04-26T11:30:55.722] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    }
+  ],
+  params: {
+    user_name: 'admin',
+    password: 'admin',
+    nick_name: '邵桂英',
+    sex: 1,
+    email: 'l.frqakpqk@qq.com'
+  }
+}
+[2022-04-26T11:31:45.724] [ERROR] default - Error
+    at Query.run (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:297:21)
+    at async model.save (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:2424:35)
+    at async Function.create (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1336:12)
+    at async createUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:6:9)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:7:13)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:9:9)
+    at async /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:8:9 {
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'user_name must be unique',
+      type: 'unique violation',
+      path: 'user_name',
+      value: 'admin',
+      origin: 'DB',
+      instance: [User],
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      '邵桂英',
+      'l.frqakpqk@qq.com',
+      1,
+      '$2a$10$TVR41KF/LtFYFLh/L5KzKufZqT00/wh93yJUBkf89lqHjRC0JmBoS',
+      0,
+      '2022-04-26 03:31:45',
+      '2022-04-26 03:31:45'
+    ]
+  },
+  original: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      '邵桂英',
+      'l.frqakpqk@qq.com',
+      1,
+      '$2a$10$TVR41KF/LtFYFLh/L5KzKufZqT00/wh93yJUBkf89lqHjRC0JmBoS',
+      0,
+      '2022-04-26 03:31:45',
+      '2022-04-26 03:31:45'
+    ]
+  },
+  fields: { user_name: 'admin' },
+  sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);'
+}
+[2022-04-26T11:36:54.307] [ERROR] default - Error
+    at Query.run (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:297:21)
+    at async model.save (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:2424:35)
+    at async Function.create (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1336:12)
+    at async createUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:6:9)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:16:13)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:9:9)
+    at async /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:8:9 {
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'user_name must be unique',
+      type: 'unique violation',
+      path: 'user_name',
+      value: 'admin',
+      origin: 'DB',
+      instance: [User],
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      '邵桂英',
+      'l.frqakpqk@qq.com',
+      1,
+      '$2a$10$Kx5rlm8AKK9ynBCLlVSgzubWskpoiLfOjIXR//CbrpUYlj/4LXmem',
+      0,
+      '2022-04-26 03:36:54',
+      '2022-04-26 03:36:54'
+    ]
+  },
+  original: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      '邵桂英',
+      'l.frqakpqk@qq.com',
+      1,
+      '$2a$10$Kx5rlm8AKK9ynBCLlVSgzubWskpoiLfOjIXR//CbrpUYlj/4LXmem',
+      0,
+      '2022-04-26 03:36:54',
+      '2022-04-26 03:36:54'
+    ]
+  },
+  fields: { user_name: 'admin' },
+  sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`is_admin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);'
+}
+[2022-04-26T12:11:45.613] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^[a-zA-Z0-9_-]{4,16}$/',
+      code: 'invalid',
+      field: 'user_name'
+    },
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    }
+  ],
+  params: { user_name: '孟娜', password: 'dolore do nostrud est' }
+}
+[2022-04-26T12:16:20.318] [INFO] default - [registerUser]:[object Object]
+[2022-04-26T12:16:20.325] [ERROR] default - Error: WHERE parameter "password" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1655:13)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1646:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1644:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1987:19)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:932:28)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+[2022-04-26T12:17:40.425] [INFO] default - [registerUser]:[object Object]
+[2022-04-26T12:17:40.432] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:14:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:20:04.353] [INFO] default - [registerUser]:[object Object]
+[2022-04-26T12:20:04.361] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:21:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:20:44.768] [INFO] default - [registerUser]:[object Object]
+[2022-04-26T12:20:44.776] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:21:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:21:19.341] [INFO] default - [registerUser]:
+[2022-04-26T12:21:19.346] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:21:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:21:56.229] [INFO] default - [registerUser]: admin
+[2022-04-26T12:21:56.235] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:21:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:22:46.456] [INFO] default - [registerUser]: admin
+[2022-04-26T12:22:46.464] [ERROR] default - QueryError [SequelizeQueryError]: Attempted a SELECT query for model 'User' as `User` without selecting any columns
+    at MySQLQueryGenerator._throwOnEmptyAttributes (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1513:11)
+    at MySQLQueryGenerator.selectFromTableFragment (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1516:10)
+    at MySQLQueryGenerator.selectQuery (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-generator.js:927:34)
+    at MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)
+    at Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.findOne (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1220:12)
+    at async findUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:22:16)
+    at async registerUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:14:26)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:17:9)
+[2022-04-26T12:23:06.884] [INFO] default - [registerUser]: admin
+[2022-04-26T12:23:07.044] [ERROR] default - undefined
+[2022-04-26T12:25:16.483] [INFO] default - [registerUser]: admin
+[2022-04-26T12:25:16.579] [WARN] default - 用户已注册
+[2022-04-26T12:26:43.709] [INFO] default - [registerUser]: {"user_name":"admin","password":"$2a$10$hnXQAUnv8WrP0l3qF.ORJeQp0MQTswaGxKtJY0atX7VxwAcVhWg6O","nick_name":"邵桂英","sex":1,"email":"l.frqakpqk@qq.com"}
+[2022-04-26T12:26:43.801] [WARN] default - {"user_name":"admin","password":"$2a$10$hnXQAUnv8WrP0l3qF.ORJeQp0MQTswaGxKtJY0atX7VxwAcVhWg6O","nick_name":"邵桂英","sex":1,"email":"l.frqakpqk@qq.com"}
+[2022-04-26T12:27:01.803] [WARN] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^[a-zA-Z0-9_-]{4,16}$/',
+      code: 'invalid',
+      field: 'user_name'
+    },
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    }
+  ],
+  params: { user_name: '孟娜', password: 'dolore do nostrud est' }
+}
+[2022-04-26T12:27:27.361] [WARN] default - undefined
+[2022-04-26T12:27:35.304] [WARN] default - undefined
+[2022-04-26T12:28:32.828] [WARN] default - {"user_name":"admin","password":"$2a$10$oDw.tBFbau2tliZ7fd9HVOxusufaMS13tVaJyoJxCs.Swpn90CedO"}
+[2022-04-26T12:30:34.575] [WARN] default - [用户名或密码错误]:{"user_name":"admin","password":"$2a$10$F7KTI8QRKLpdPq4pmMjM3eaDuozJcyh/pMKxrE17lJtsfHfUWvbXK"}
+[2022-04-26T12:35:48.415] [WARN] default - [用户名或密码错误]:{"user_name":"admin","password":"$2a$10$zwTT5VKVgt1DS4mFLozC6O1FNAM6Lxl/lM6zFvrR1RHBE08fnJ2iy"}
+[2022-04-26T12:37:05.724] [WARN] default - [用户名或密码错误]:{"user_name":"admin","password":"$2a$10$awZ1vDjeXaVjNqkkFBTQT.V8x4R4UpIILrZQhRCD1CiGZuP5mQxbu"}
+[2022-04-26T12:37:45.415] [WARN] default - [用户名或密码错误]:{"user_name":"admin","password":"$2a$10$WQHrKEHUE5IB43nJVAzXcengBKKHJltANHc.AKx1IlCZ7sdMJZsg2"}
+[2022-04-26T12:38:10.722] [WARN] default - [用户名或密码错误]:{"user_name":"admin","password":"$2a$10$2iVGOCFudwHgNRTl2onx2en8RfKdxYJuS9Doemd3fospeVI6dFBPC"}
+[2022-04-26T12:38:46.812] [INFO] default - [registerUser]: {"user_name":"admin1","password":"$2a$10$EpmNO5su7RML2Qbo2UYlpOVyLG79qJajMlWvh6g5HxoGSaB49C9ga","nick_name":"邵桂英1","sex":1,"email":"frqakpqk@qq.com"}
+[2022-04-26T12:38:57.510] [WARN] default - [用户名或密码错误]:{"user_name":"admin1","password":"$2a$10$iYfiJPYNoXPDwM6wC9Cf6.aU7/n67Eh/a9awt1YNRgnwML.7w3CRa"}
+[2022-04-26T12:39:17.792] [WARN] default - [用户名或密码错误]:{"user_name":"admin1","password":"$2a$10$8YCVBWp70knVq0xdmEpNv.vdatYUfGfcQcAWJcYRzNOVqr6WxY/5y"}
+[2022-04-26T12:41:04.857] [INFO] default - [registerUser]: {"user_name":"admin1","password":"$2a$10$Cuyx.6bcQC1QZqDpZJsds.gsh3rLjWs4XpmT5K.5PV6OTrOkGn076","nick_name":"邵桂英1","sex":1,"email":"frqakpqk@qq.com"}
+[2022-04-26T12:41:04.871] [WARN] default - [用户已注册]:{"user_name":"admin1","password":"$2a$10$Cuyx.6bcQC1QZqDpZJsds.gsh3rLjWs4XpmT5K.5PV6OTrOkGn076","nick_name":"邵桂英1","sex":1,"email":"frqakpqk@qq.com"}
+[2022-04-26T12:41:26.210] [WARN] default - [用户名或密码错误]:{"user_name":"admin1","password":"$2a$10$IJ8SU4zxGHbpvkt4BU9pZu4g1hJ3YMIVwOR.9qDQIaGZ8se40ZdSW"}
+[2022-04-26T13:42:29.851] [WARN] default - [参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:45:04.322] [WARN] default - [参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:45:55.637] [WARN] default - [参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:46:40.549] [WARN] default - [参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:48:00.962] [WARN] default - [20001-参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:48:19.089] [WARN] default - [20001-参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:48:40.418] [WARN] default - [20001-参数有误]:UnprocessableEntityError: Validation Failed
+[2022-04-26T13:51:08.338] [INFO] default - [20001-参数有误]
+[2022-04-26T13:51:08.339] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:15:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    { message: 'required', field: 'pageNum', code: 'missing_field' },
+    { message: 'required', field: 'pageSize', code: 'missing_field' }
+  ],
+  params: {}
+}
+[2022-04-26T13:51:48.869] [INFO] default - [20001-参数有误]
+[2022-04-26T13:51:48.869] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:15:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should be a number',
+      code: 'invalid',
+      field: 'pageNum'
+    },
+    {
+      message: 'should be one of 10, 20, 50',
+      code: 'invalid',
+      field: 'pageSize'
+    }
+  ],
+  params: { pageNum: '1', pageSize: '10' }
+}
+[2022-04-26T13:52:17.611] [INFO] default - [20001-参数有误]
+[2022-04-26T13:52:17.611] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:15:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should be a number',
+      code: 'invalid',
+      field: 'pageNum'
+    },
+    {
+      message: 'should be one of 10, 20, 50',
+      code: 'invalid',
+      field: 'pageSize'
+    }
+  ],
+  params: { pageNum: '1', pageSize: '10' }
+}
+[2022-04-26T13:53:35.880] [INFO] default - [20001-参数有误]
+[2022-04-26T13:53:35.882] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:15:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should be one of 10, 20, 50',
+      code: 'invalid',
+      field: 'pageSize'
+    }
+  ],
+  params: { pageNum: 36, pageSize: 22 }
+}
+[2022-04-26T14:12:41.003] [ERROR] default - Error
+    at Query.run (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.select (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:12)
+    at async Function.findAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1126:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1296:27)
+    at async findUsers (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:45:16)
+    at async getUsers (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:71:37)
+    at async /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:9:9 {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'User.adipisicing`cupidatat' in 'order clause'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Query.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'User.adipisicing`cupidatat' in 'order clause'",
+    sql: "SELECT `id`, `user_name`, `nick_name`, `email`, `sex`, `is_admin`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`user_name` LIKE '%顾超%' AND `User`.`is_admin` = 'quis deserunt ea aliquip' ORDER BY `User`.`adipisicing``cupidatat` LIMIT 0, 10;",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'User.adipisicing`cupidatat' in 'order clause'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Query.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'User.adipisicing`cupidatat' in 'order clause'",
+    sql: "SELECT `id`, `user_name`, `nick_name`, `email`, `sex`, `is_admin`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`user_name` LIKE '%顾超%' AND `User`.`is_admin` = 'quis deserunt ea aliquip' ORDER BY `User`.`adipisicing``cupidatat` LIMIT 0, 10;",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `user_name`, `nick_name`, `email`, `sex`, `is_admin`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`user_name` LIKE '%顾超%' AND `User`.`is_admin` = 'quis deserunt ea aliquip' ORDER BY `User`.`adipisicing``cupidatat` LIMIT 0, 10;",
+  parameters: {}
+}
+[2022-04-26T14:35:15.165] [INFO] default - [20001-参数有误]
+[2022-04-26T14:35:15.166] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:34:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should match /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/',
+      code: 'invalid',
+      field: 'password'
+    }
+  ],
+  params: {
+    user_name: 'admin',
+    nick_name: 'admin',
+    sex: 2,
+    email: 'p.vkqvr@qq.com',
+    password: 'adminadmin',
+    level: 0
+  }
+}
+[2022-04-26T14:35:41.106] [ERROR] default - Error
+    at Query.run (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/sequelize.js:313:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:297:21)
+    at async model.save (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:2424:35)
+    at async Function.create (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/sequelize/lib/model.js:1336:12)
+    at async createUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/services/user.services.js:7:9)
+    at async addUser (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/controller/user.controller.js:76:13)
+    at async cryptPassword (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:13:9)
+    at async verifyRegister (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:48:9) {
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'user_name must be unique',
+      type: 'unique violation',
+      path: 'user_name',
+      value: 'admin',
+      origin: 'DB',
+      instance: [User],
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`level`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      'admin',
+      'p.vkqvr@qq.com',
+      2,
+      '$2a$10$7qx.j24L/zL5F5w1NM3pU.8aYjs4F6T8Py6qMOdkbCv6tRM03hWpq',
+      0,
+      '2022-04-26 06:35:41',
+      '2022-04-26 06:35:41'
+    ]
+  },
+  original: Error: Duplicate entry 'admin' for key 'users.user_name'
+      at Packet.asError (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:456:32)
+      at PacketParser.onPacket (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:85:12)
+      at PacketParser.executeStart (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/mysql2/lib/connection.js:92:25)
+      at Socket.emit (node:events:526:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'admin' for key 'users.user_name'",
+    sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`level`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'admin',
+      'admin',
+      'p.vkqvr@qq.com',
+      2,
+      '$2a$10$7qx.j24L/zL5F5w1NM3pU.8aYjs4F6T8Py6qMOdkbCv6tRM03hWpq',
+      0,
+      '2022-04-26 06:35:41',
+      '2022-04-26 06:35:41'
+    ]
+  },
+  fields: { user_name: 'admin' },
+  sql: 'INSERT INTO `Users` (`id`,`user_name`,`nick_name`,`email`,`sex`,`password`,`level`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);'
+}
+[2022-04-26T14:36:16.290] [INFO] default - [20101-用户已注册]
+[2022-04-26T14:36:16.293] [ERROR] default - {"user_name":"admin","nick_name":"admin","sex":2,"email":"p.vkqvr@qq.com","password":"admin123456","level":0}
+[2022-04-26T14:59:16.348] [INFO] default - [20001-参数有误]
+[2022-04-26T14:59:16.349] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:34:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [ { message: 'should be a string', code: 'invalid', field: 'id' } ],
+  params: { id: 5, nick_name: '胡洋1' }
+}
+[2022-04-26T14:59:28.812] [INFO] default - [20001-参数有误]
+[2022-04-26T14:59:28.812] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/midddleware/user.middleware.js:34:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/server/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [ { message: 'should be a string', code: 'invalid', field: 'id' } ],
+  params: { id: 5, nick_name: '胡洋啊' }
+}
