@@ -3,7 +3,6 @@ const validator = rules => {
         try {
             ctx.verifyParams(rules)
         } catch (e) {
-            console.log(e)
             return ctx.app.emit('err', ctx, 20001, e)
         }
         await next()

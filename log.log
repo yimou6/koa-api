@@ -754,3 +754,201 @@
   errors: [ { message: 'should be a string', code: 'invalid', field: 'id' } ],
   params: { id: 5, nick_name: '胡洋啊' }
 }
+[2022-04-26T17:43:55.410] [INFO] default - [20001-参数有误]
+[2022-04-26T17:43:55.411] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    {
+      message: 'should be a boolean',
+      code: 'invalid',
+      field: 'banner'
+    },
+    { message: 'should be a number', code: 'invalid', field: 'price' },
+    { message: 'should be a number', code: 'invalid', field: 'stock' },
+    {
+      message: 'should be one of 0, 1',
+      code: 'invalid',
+      field: 'status'
+    }
+  ],
+  params: {
+    good_name: '小米16',
+    good_desc: '岂止于快｜更快｜更强',
+    price: '6999',
+    stock: '10000',
+    banner_img: '',
+    banner: '0',
+    status: '0'
+  }
+}
+[2022-04-26T17:46:17.919] [INFO] default - [20001-参数有误]
+[2022-04-26T17:46:17.920] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:377:31)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:52:13) {
+  code: 'INVALID_PARAM',
+  errors: [
+    { message: 'should be a number', code: 'invalid', field: 'price' },
+    { message: 'should be a number', code: 'invalid', field: 'stock' }
+  ],
+  params: {
+    good_name: '小米16',
+    good_desc: '岂止于快｜更快｜更强',
+    price: '6999',
+    stock: '10000',
+    banner_img: '',
+    banner: '0',
+    status: '0'
+  }
+}
+[2022-04-26T17:51:43.077] [ERROR] default - ValidationError [SequelizeValidationError]: string violation: good_img cannot be an array or an object
+    at InstanceValidator._validate (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/instance-validator.js:60:7)
+    at async InstanceValidator.validate (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/instance-validator.js:54:12)
+    at async model.save (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2360:7)
+    at async Function.create (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:1336:12)
+    at async createGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/services/good.services.js:4:9)
+    at async addGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/controller/good.controller.js:32:13)
+    at async /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/utils/index.js:8:9
+    at async verifyParam (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:52:7)
+    at async serve (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-static/index.js:53:9) {
+  errors: [
+    ValidationErrorItem {
+      message: 'good_img cannot be an array or an object',
+      type: 'string violation',
+      path: 'good_img',
+      value: [Array],
+      origin: 'CORE',
+      instance: [Good],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-04-26T22:10:29.227] [INFO] default - [20201-已存在该商品]
+[2022-04-26T22:10:29.227] [ERROR] default - 
+[2022-04-26T22:21:16.687] [INFO] default - [20104-无权限访问]
+[2022-04-26T22:21:16.687] [ERROR] default - 
+[2022-04-26T22:21:44.563] [INFO] default - [20001-参数有误]
+[2022-04-26T22:21:44.563] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/user.middleware.js:34:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [
+    { message: 'should be a number', code: 'invalid', field: 'id' },
+    {
+      message: 'should be an array',
+      code: 'invalid',
+      field: 'desc_img'
+    }
+  ],
+  params: {
+    id: '4',
+    good_name: '红米',
+    good_desc: '大屏｜大电量｜大无敌',
+    price: '1999',
+    stock: '10000',
+    banner_img: '',
+    good_img: '',
+    banner: '0',
+    status: '0',
+    desc_img: 'f24cd9452268a8b217f549301.webp,f24cd9452268a8b217f549300.webp'
+  }
+}
+[2022-04-26T22:22:05.986] [INFO] default - [20001-参数有误]
+[2022-04-26T22:22:05.988] [ERROR] default - UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa/lib/context.js:97:11)
+    at Object.app.context.verifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-parameter/index.js:43:15)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/utils/index.js:4:17
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at authToken (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/user.middleware.js:34:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:372:16
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at /Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/@koa/router/lib/router.js:377:31) {
+  code: 'INVALID_PARAM',
+  errors: [ { message: 'should be a number', code: 'invalid', field: 'id' } ],
+  params: {
+    id: '4',
+    good_name: '红米',
+    good_desc: '大屏｜大电量｜大无敌',
+    price: '1999',
+    stock: '10000',
+    banner_img: '',
+    good_img: '',
+    banner: '0',
+    status: '0',
+    desc_img: 'f24cd9452268a8b217f549301.webp,f24cd9452268a8b217f549300.webp'
+  }
+}
+[2022-04-26T22:22:27.773] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'split')
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/model/good.model.js:20:34)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2108:41)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2130:33)
+    at Function.update (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:1869:44)
+    at updateGoodById (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/services/good.services.js:15:20)
+    at modifyGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/controller/good.controller.js:56:19)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyModifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:74:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at formBaseParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:10:15)
+[2022-04-26T22:23:09.021] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'split')
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/model/good.model.js:20:34)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2108:41)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2130:33)
+    at Function.update (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:1869:44)
+    at updateGoodById (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/services/good.services.js:15:20)
+    at modifyGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/controller/good.controller.js:56:19)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyModifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:75:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at formBaseParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:10:15)
+[2022-04-26T22:23:33.487] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'split')
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/model/good.model.js:20:34)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2108:41)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2130:33)
+    at Function.update (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:1869:44)
+    at updateGoodById (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/services/good.services.js:15:20)
+    at modifyGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/controller/good.controller.js:56:19)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyModifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:75:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at formBaseParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:10:15)
+[2022-04-26T22:24:25.969] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'split')
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/model/good.model.js:20:34)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2108:41)
+    at model.get (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:2130:33)
+    at Function.update (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/sequelize/lib/model.js:1869:44)
+    at updateGoodById (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/services/good.services.js:15:20)
+    at modifyGood (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/controller/good.controller.js:56:19)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at verifyModifyParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:75:15)
+    at dispatch (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/node_modules/koa-compose/index.js:42:32)
+    at formBaseParams (/Users/nibeijiy/Documents/学习/项目/koa-simple-shop/koa-api/midddleware/good.middleware.js:10:15)

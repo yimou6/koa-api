@@ -6,6 +6,7 @@ const defaultConfig = {
     PORT: 8000,
     // MySQL 数据库配置
     MYSQL_DB: 'simple_shop',
+    // 正式环境换成负责密码和非root用户
     MYSQL_USER: 'root',
     MYSQL_PWD: '12345678',
     MYSQL_HOST: 'localhost',
