@@ -1,12 +1,10 @@
 const { updateCart, findCarts } = require('../services/cart.services')
 module.exports = {
     async modifyCart(ctx) {
-        console.log(1)
-        const { id, good_id, number, selected } = ctx.request.body
-        console.log('id', id)
+        const { good_id, number, selected } = ctx.request.body
         const user_id = ctx.state.user.id
         try {
-            await updateCart({ id, good_id, user_id, number, selected })
+            await updateCart({ good_id, user_id, number, selected })
             ctx.body = {
                 code: 0,
                 msg: '操作成功'

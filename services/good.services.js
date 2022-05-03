@@ -25,10 +25,11 @@ module.exports = {
         if (count > 0) {
             let data = []
             // 需要这样转换一下才能拿到model中定义的get方法返回的good_img值
-            for (const { dataValues, good_img } of rows) {
+            for (const { dataValues, good_img, banner_img } of rows) {
                 data.push({
                     ...dataValues,
-                    good_img
+                    good_img,
+                    banner_img
                 })
             }
             return { count, rows: data }

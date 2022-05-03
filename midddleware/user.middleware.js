@@ -16,19 +16,24 @@ module.exports = {
     async authToken(ctx, next) {
         const { authorization } = ctx.request.headers
         if (!authorization) {
-            return ctx.app.emit('err', ctx, 20104, '')
+            return ctx.app.emit('err', ctx, 401, '')
         }
-        const token = authorization.replace('Bearer ', '')
+        let token = ''
+        try {
+            token = authorization.replace('Bearer ', '')
+        } catch (e) {
+            return ctx.app.emit('err', ctx, 401, '')
+        }
         try {
             ctx.state.user = jwt.verify(token, JWT_SECRET)
         } catch (e) {
             switch (e.name) {
                 case 'TokenExpiredError':
-                    return ctx.app.emit('error', ctx, 20105)
+                    return ctx.app.emit('err', ctx, 401, e)
                 case 'JsonWebTokenError':
-                    return ctx.app.emit('error', ctx, 20106)
+                    return ctx.app.emit('err', ctx, 401, e)
                 default:
-                    return ctx.app.emit('error', ctx, 20107)
+                    return ctx.app.emit('err', ctx, 401, e)
             }
         }
         await next()

@@ -30,7 +30,16 @@ module.exports = sequelize.define('Good', {
     },
     banner_img: {
         type: DataTypes.STRING,
-        comment: '轮播图片'
+        comment: '轮播图片',
+        // 读取图片时返回 图片服务器地址+图片名
+        get: function () {
+            const rawValue = this.getDataValue('banner_img')
+            if (rawValue) {
+                return `${IMG_SERVER}${rawValue}`
+            } else {
+                return ''
+            }
+        }
     },
     price: {
         type: DataTypes.FLOAT,

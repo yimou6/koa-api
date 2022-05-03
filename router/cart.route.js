@@ -17,10 +17,8 @@ router.patch(
     authToken,
     validator({
         good_id: 'int',
-        number: 'int',
-        selected: 'boolean'
+        number: 'int'
     }),
-    verifyAddCart,
     modifyCart
 )
 /**

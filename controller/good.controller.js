@@ -49,9 +49,8 @@ module.exports = {
     },
     // 修改商品
     async modifyGood(ctx) {
-        let { id, good_name, good_desc } = ctx.request.body
-        const { status, banner, price, stock, good_img, banner_img } = ctx.request.body.state
-
+        const { id, good_name, good_desc, status, banner, price, stock } = ctx.request.body
+        const { good_img, banner_img } = ctx.request.body.state
         try {
             await updateGoodById(id, {
                 good_name,

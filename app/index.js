@@ -33,18 +33,19 @@ app.use(router.allowedMethods())
 
 // 统一错误处理
 app.on('err', (ctx, code, err) => {
-    ctx.status = code === 500 ? code : 200
-    if (code !== 500) {
-        info(`[${code}-${errType[code]}]`)
+    if (code < 1000) {
+        ctx.status = code
+    } else {
+        ctx.status = 200
     }
     error(err)
     // 生产环境返回"系统错误"，开发环境返回具体错误信息。
     ctx.body = {
         code,
-        msg: code !== 500
+        msg: code > 1000
             ? errType[code]
             : ENV === 'prod'
-                ? '系统错误'
+                ? errType[code]
                 : err
     }
 })

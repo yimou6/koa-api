@@ -76,4 +76,16 @@ router.post(
     getGoods
 )
 
+/**
+ * 查询商品列表
+ */
+router.post(
+    '/',
+    validator({
+        pageNum: 'number',
+        pageSize: 'number'
+    }),
+    getGoods
+)
+
 module.exports = router

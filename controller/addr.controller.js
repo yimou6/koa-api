@@ -59,9 +59,8 @@ module.exports = {
     },
     // 查询地址列表
     async getAddress(ctx) {
-        const { pageNum, pageSize } = ctx.request.body
         try {
-            const { count, rows } = await findAddress({ pageNum, pageSize })
+            const { count, rows } = await findAddress()
             ctx.body = {
                 code: 0,
                 msg: '查询成功',

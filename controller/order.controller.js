@@ -13,6 +13,8 @@ module.exports = {
                 order_number,
                 status: 0
             })
+            // const goodInfo = JSON.parse(goods_info)
+
             ctx.body = {
                 code: 0,
                 msg: '订单添加成功'

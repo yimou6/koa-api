@@ -28,7 +28,11 @@ module.exports = {
 
         let bannerImage
         if (banner_img) {
-            bannerImage = path.parse(banner_img.filepath).base
+            if (typeof banner_img === 'string') {
+                bannerImage = path.parse(banner_img).base
+            } else {
+                bannerImage = path.parse(banner_img.filepath).base
+            }
         }
 
         ctx.request.body.state = {
@@ -59,12 +63,18 @@ module.exports = {
         }
         if (desc_img) {
             const temp = desc_img.split(',')
-            imageNames = imageNames.concat(temp)
+            for (const img of temp) {
+                imageNames.push(path.parse(img).base)
+            }
         }
 
         let bannerImage
         if (banner_img) {
-            bannerImage = path.parse(banner_img.filepath).base
+            if (typeof banner_img === 'string') {
+                bannerImage = path.parse(banner_img).base
+            } else {
+                bannerImage = path.parse(banner_img.filepath).base
+            }
         }
 
         ctx.request.body.state = {

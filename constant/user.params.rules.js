@@ -1,6 +1,6 @@
 
 // 用户名
-const USER_NAME_REG = /^[a-zA-Z0-9_-]{4,16}$/
+const USER_NAME_REG = /^[a-zA-Z0-9_]{4,16}$/
 // 密码
 const PASSWORD_REG = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/
 // 昵称

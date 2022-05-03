@@ -1,5 +1,5 @@
 const Router = require('@koa/router')
-const router = new Router({ prefix: '/addr' })
+const router = new Router({ prefix: '/address' })
 
 const { authToken } = require('../midddleware/user.middleware')
 const { validator } = require('../utils')
@@ -53,13 +53,9 @@ router.delete(
 /**
  * 获取地址列表
  */
-router.post(
+router.get(
     '/',
     authToken,
-    validator({
-        pageNum: 'int',
-        pageSize: 'int'
-    }),
     getAddress
 )
 
