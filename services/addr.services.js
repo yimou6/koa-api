@@ -17,8 +17,12 @@ module.exports = {
         })
     },
     // 查询收货地址
-    async findAddress() {
-        const { count, rows } = await Addr.findAndCountAll()
+    async findAddress(user_id) {
+        const { count, rows } = await Addr.findAndCountAll({
+            where: {
+                user_id
+            }
+        })
         if (count > 0) {
             let data = []
             // 需要这样转换一下才能拿到model中定义的get方法返回的good_img值

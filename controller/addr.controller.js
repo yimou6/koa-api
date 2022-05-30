@@ -59,8 +59,9 @@ module.exports = {
     },
     // 查询地址列表
     async getAddress(ctx) {
+        const user_id = ctx.state.user.id
         try {
-            const { count, rows } = await findAddress()
+            const { count, rows } = await findAddress(user_id)
             ctx.body = {
                 code: 0,
                 msg: '查询成功',

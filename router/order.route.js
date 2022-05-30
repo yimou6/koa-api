@@ -11,6 +11,7 @@ router.put(
     '/',
     authToken,
     validator({
+        id: 'array',
         address_id: 'int',
         goods_info: 'string',
         total: 'number'
